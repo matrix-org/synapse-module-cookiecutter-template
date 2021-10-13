@@ -1,0 +1,11 @@
+{
+  "directory_name": "synapse-my-module",
+  "module_human_name": "My Module for Synapse",
+  "package_description": "This module adds super florbs to Synapse",
+  "package_name": "synapse_my_module",
+  "module_class_name": "MyModule",
+  "author_name": "John Moduleson",
+  "author_email": "jm@example.org",
+  "towncrier_pr_link_format": "[\\#{issue}](https://github.com/me/my-repo/issues/{issue})",
+  "main_git_branch": "main"
+}
