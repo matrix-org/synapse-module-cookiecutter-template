@@ -37,11 +37,6 @@ trial tests
 
 To run the linters and `mypy` type checker, use `./scripts-dev/lint.sh`.
 
-Don't forget to create a changelog entry ('news fragment') for your changes; consult
-the [Synapse contributing guide][synapse_changelog_help] for more information.
-
-[synapse_changelog_help]: https://matrix-org.github.io/synapse/latest/development/contributing_guide.html#changelog
-
 
 ## Releasing
 

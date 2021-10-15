@@ -20,7 +20,6 @@ What you get:
     Synapse 1.46 and later)
     * strict by default (configurable in `mypy.ini`)
 * unit testing using `trial` (invokable with `tox`, checked in CI)
-* changelog management using `towncrier`
 
 Please refer to [the Synapse 'Writing a module' documentation][synapse_writemodule]
 for descriptions and examples (at the bottom of most pages) of using the Synapse
