@@ -15,8 +15,7 @@ Then alter your homeserver configuration, adding to your `modules` configuration
 modules:
   - module: {{ cookiecutter.package_name }}.{{ cookiecutter.module_class_name }}
     config:
-      # Optional: example boolean flag
-      example_option: True
+      # TODO: Complete this section with an example for your module
 ```
 
 

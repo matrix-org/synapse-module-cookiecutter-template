@@ -2,7 +2,7 @@ from typing import Dict, List
 
 from setuptools import setup
 
-BASE_DEPENDENCIES: List[str] = ["attrs", "cattrs"]
+BASE_DEPENDENCIES: List[str] = ["attrs"]
 
 TEST_DEPENDENCIES: List[str] = ["matrix-synapse>=1.44.0", "tox", "twisted"]
 

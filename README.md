@@ -7,10 +7,7 @@ This is a [Cookiecutter] template for creating new [Synapse] modules.
 
 What you get:
 
-* a Synapse module package, with
-  * loading module configuration into an `attrs` class (using `cattrs`)
-  * an example of how to register spam checker callbacks — refer to the Synapse
-    module documentation for more
+* a Synapse module package
 * a `README` with basic instructions on installation, development and releasing
 * `setup.py` metadata
 * CI configurations for
@@ -25,6 +22,11 @@ What you get:
 * unit testing using `trial` (invokable with `tox`, checked in CI)
 * changelog management using `towncrier`
 
+Please refer to [the Synapse 'Writing a module' documentation][synapse_writemodule]
+for descriptions and examples (at the bottom of most pages) of using the Synapse
+module API, including registering callbacks.
+
+[synapse_writemodule]: https://matrix-org.github.io/synapse/develop/modules/writing_a_module.html
 
 ## How to use this template
 
