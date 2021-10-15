@@ -16,7 +16,7 @@ class {{ cookiecutter.module_class_name }}:
         self._config = config
 
     @staticmethod
-    def parse_config(config: Dict[Any, Any]) -> {{ cookiecutter.module_class_name }}Config:
+    def parse_config(config: Dict[str, Any]) -> {{ cookiecutter.module_class_name }}Config:
         # Parse the module's configuration here.
         # If there is an issue with the configuration, raise a
         # synapse.module_api.errors.ConfigError.
