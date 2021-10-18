@@ -57,18 +57,7 @@ You will then be asked a series of questions to populate your project:
    This will be used as the package name for your module.
 5. `module_class_name`: Specify a **PascalCase** Python class name here.
    This will be used as the class name for your module class.
-6. `author_name`: Specify your name here, to be used in the Python package
-   metadata in `setup.py`.
-7. `author_email`: Specify your e-mail address here, to be used in the Python package
-   metadata in `setup.py`.
-8. `towncrier_pr_link_format`: Specify a template for how links to pull requests
-   or merge requests will appear in the changelog.
-   `{issue}` will be substituted with the PR/MR number.
-   For GitHub, `[\#{issue}](https://github.com/me/my-repo/issues/{issue})` is sensible;
-   just replace `me/my-repo`.
-   For GitLab, `[\!{issue}](https://my.gitlab.example.org/me/my-repo/-/merge_requests/{issue})` is sensible;
-   just replace `my.gitlab.example.org` and `me/my-repo`.
-9. `main_git_branch`: Specify the name of your main Git branch here.
+6. `main_git_branch`: Specify the name of your main Git branch here.
    Although this template does not initialise a Git repository automatically,
    the changelog linter script depends on it.
    This is commonly `main`, `master` or `develop`.
