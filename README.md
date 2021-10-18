@@ -59,7 +59,7 @@ You will then be asked a series of questions to populate your project:
    This will be used as the class name for your module class.
 6. `main_git_branch`: Specify the name of your main Git branch here.
    Although this template does not initialise a Git repository automatically,
-   the changelog linter script depends on it.
+   the suggested release instructions mention it.
    This is commonly `main`, `master` or `develop`.
 
 If all goes well, you should now have a project starter!
@@ -76,7 +76,7 @@ of the template in the future: you could branch off from the initial commit,
 re-run the template generator, commit, and then merge that branch into your main
 branch.)
 
-If you use GitHub or GitLab, you should use their web interface to enable the
+If you use GitHub or GitLab, you should use its web interface to enable the
 included CI configuration.
 
 
