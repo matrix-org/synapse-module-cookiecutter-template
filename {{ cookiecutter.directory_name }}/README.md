@@ -55,7 +55,7 @@ Synapse developers (assuming a Unix-like shell):
     git checkout -b release-v$version
     ```
 
- 3. Update `setup.py` so that the `version` is correct.
+ 3. Update `setup.cfg` so that the `version` is correct.
 
  4. Stage the changed files and commit.
     ```shell
