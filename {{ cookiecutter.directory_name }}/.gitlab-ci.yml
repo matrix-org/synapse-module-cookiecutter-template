@@ -31,12 +31,3 @@ unit_tests:
   rules:
     - if: '$CI_PIPELINE_SOURCE == "push"'
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
-
-check_newsfile:
-  tags: ['docker']
-  script:
-    - "python -m pip install towncrier"
-    - "echo $CI_MERGE_REQUEST_IID is the merge request ID"
-    - "scripts-dev/check_newsfragment.sh $CI_MERGE_REQUEST_IID"
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
