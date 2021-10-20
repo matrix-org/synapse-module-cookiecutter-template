@@ -59,8 +59,8 @@ You will then be asked a series of questions to populate your project:
    This will be used as the class name for your module class.
 6. `main_git_branch`: Specify the name of your main Git branch here.
    Although this template does not initialise a Git repository automatically,
-   the suggested release instructions mention it.
-   This is commonly `main`, `master` or `develop`.
+   the CI configuration and suggested release instructions mention it.
+   This is commonly `main`, `master`, `trunk`, `default` or `develop`.
 
 If all goes well, you should now have a project starter!
 

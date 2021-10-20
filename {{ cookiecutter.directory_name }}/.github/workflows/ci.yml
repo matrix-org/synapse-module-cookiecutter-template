@@ -1,7 +1,7 @@
 name: Linting and Tests
 on:
   push:
-    branches: ["master", "main", "develop"]
+    branches: ["{{ cookiecutter.main_git_branch }}"]
   pull_request:
 
 jobs: 
