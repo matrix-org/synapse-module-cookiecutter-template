@@ -9,7 +9,7 @@ What you get:
 
 * a Synapse module package
 * a `README` with basic instructions on installation, development and releasing
-* `setup.py` metadata
+* `setup.cfg` metadata (the declarative equivalent of `setup.py`)
 * CI configurations for
   * GitHub Actions
   * GitLab
@@ -52,7 +52,7 @@ You will then be asked a series of questions to populate your project:
 2. `module_human_name`: Specify a human-readable module name here.
    This is used in the `README` file and the changelog.
 3. `package_description`: Specify a human-readable module description.
-   This is used in the `README` file and `setup.py` file.
+   This is used in the `README` file and `setup.cfg` file.
 4. `package_name`: Specify a **snake_case** Python package name here.
    This will be used as the package name for your module.
 5. `module_class_name`: Specify a **PascalCase** Python class name here.
