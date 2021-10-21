@@ -7,6 +7,8 @@
 
 From the virtual environment that you use for Synapse, install this module with:
 ```shell
+# You may need to upgrade setuptools and pip
+pip install --upgrade setuptools pip
 pip install path/to/{{ cookiecutter.directory_name }}
 ```
 
@@ -23,6 +25,8 @@ modules:
 
 In a virtual environment, use:
 ```shell
+# You need a recent (as of 2021) version of setuptools and pip
+pip install --upgrade setuptools pip
 pip install -e .[dev]
 ```
 
