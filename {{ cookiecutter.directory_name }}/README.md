@@ -53,38 +53,32 @@ Synapse developers (assuming a Unix-like shell):
     version=X.Y.Z
     ```
 
- 2. Branch off from `{{ cookiecutter.main_git_branch }}` to `release-vX.Y.Z`:
-    ```shell
-    git checkout {{ cookiecutter.main_git_branch }}
-    git checkout -b release-v$version
-    ```
+ 2. Update `setup.cfg` so that the `version` is correct.
 
- 3. Update `setup.cfg` so that the `version` is correct.
-
- 4. Stage the changed files and commit.
+ 3. Stage the changed files and commit.
     ```shell
     git add -u
     git commit -m v$version -n
     ```
 
- 5. Push your changes.
+ 4. Push your changes.
     ```shell
-    git push -u origin release-v$version
+    git push
     ```
 
- 6. When ready, create a signed tag for the release:
+ 5. When ready, create a signed tag for the release:
     ```shell
     git tag -s v$version
     ```
     Base the tag message on the changelog.
 
- 7. Push the tag.
+ 6. Push the tag.
     ```shell
     git push origin tag v$version
     ```
 
- 8. If applicable:
+ 7. If applicable:
     Create a *release*, based on the tag you just pushed, on GitHub or GitLab.
 
- 9. If applicable:
+ 8. If applicable:
     Create a source distribution and upload it to PyPI.
