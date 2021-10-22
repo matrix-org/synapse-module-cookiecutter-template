@@ -1,11 +1,10 @@
-image: python:3.7
-
 
 variables:
   GIT_DEPTH: 0
 
 
 check_code_style:
+  image: python:3
   tags: ['docker']
   script:
     - "pip install tox"
@@ -15,6 +14,7 @@ check_code_style:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
 
 check_types:
+  image: python:3
   tags: ['docker']
   script:
     - "pip install tox"
@@ -24,6 +24,7 @@ check_types:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
 
 unit_tests:
+  image: python:3.7
   tags: ['docker']
   script:
     - "pip install tox"
