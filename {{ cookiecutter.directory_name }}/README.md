@@ -7,10 +7,10 @@
 
 From the virtual environment that you use for Synapse, install this module with:
 ```shell
-# You may need to upgrade setuptools and pip
-pip install --upgrade setuptools pip
 pip install path/to/{{ cookiecutter.directory_name }}
 ```
+(If you run into issues, you may need to upgrade `pip` first, e.g. by running
+`pip install --upgrade pip`)
 
 Then alter your homeserver configuration, adding to your `modules` configuration:
 ```yaml
@@ -23,10 +23,8 @@ modules:
 
 ## Development
 
-In a virtual environment, use:
+In a virtual environment with pip ≥ 21.1, run
 ```shell
-# You need a recent (as of 2021) version of setuptools and pip
-pip install --upgrade setuptools pip
 pip install -e .[dev]
 ```
 
