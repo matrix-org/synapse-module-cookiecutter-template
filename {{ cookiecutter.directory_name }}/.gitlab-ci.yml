@@ -23,8 +23,7 @@ check_types:
     - if: '$CI_PIPELINE_SOURCE == "push"'
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
 
-unit_tests:
-  image: python:3.7
+.unit_tests_template: &unit_tests
   tags: ['docker']
   script:
     - "pip install tox"
@@ -32,3 +31,11 @@ unit_tests:
   rules:
     - if: '$CI_PIPELINE_SOURCE == "push"'
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+unit_tests_latest:
+  <<: *unit_tests
+  image: python:3
+
+unit_tests_oldest:
+  <<: *unit_tests
+  image: python:3.7
