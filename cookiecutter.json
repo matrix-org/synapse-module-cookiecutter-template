@@ -1,0 +1,8 @@
+{
+  "directory_name": "synapse-my-module",
+  "module_human_name": "My Module for Synapse",
+  "package_description": "This module adds super florbs to Synapse",
+  "package_name": "synapse_my_module",
+  "module_class_name": "MyModule",
+  "main_git_branch": "main"
+}
