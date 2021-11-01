@@ -42,7 +42,7 @@ will do if you use `pip` or `apt`.
 
 `cd` to a directory where you would like to create a new project as a subdirectory, then run
 ```shell
-cookiecutter https://github.com/matrix-org/synapse-module-cookiecutter-template.git
+cookiecutter https://github.com/matrix-org/synapse-module-cookiecutter-template.git --checkout synapse_team
 ```
 
 You will then be asked a series of questions to populate your project:
