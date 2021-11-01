@@ -1,6 +1,9 @@
-# Synapse Module Cookiecutter Template
+# Synapse Module Cookiecutter Template (Synapse Team Edition)
 
-This is a [Cookiecutter] template for creating new [Synapse] modules.
+This is a [Cookiecutter] template for creating new [Synapse] modules,
+**with customisations specific to the Synapse Team that may not apply for other
+people**. If you're not creating a module that will be maintained by the Synapse
+Team, consider looking at the [standard edition of this template on the `main` branch](https://github.com/matrix-org/synapse-module-cookiecutter-template).
 
 [Cookiecutter]: https://pypi.org/project/cookiecutter/
 [Synapse]: https://github.com/matrix-org/synapse
@@ -42,6 +45,7 @@ will do if you use `pip` or `apt`.
 
 `cd` to a directory where you would like to create a new project as a subdirectory, then run
 ```shell
+# Note that we use a special branch below!
 cookiecutter https://github.com/matrix-org/synapse-module-cookiecutter-template.git --checkout synapse_team
 ```
 
