@@ -1,6 +1,9 @@
-# Synapse Module Cookiecutter Template
+# Synapse Module Cookiecutter Template (Standard Edition)
 
 This is a [Cookiecutter] template for creating new [Synapse] modules.
+
+**⚠ This is the standard edition of the template. Synapse team members should use
+the [Synapse team edition](https://github.com/matrix-org/synapse-module-cookiecutter-template/tree/synapse_team).**
 
 [Cookiecutter]: https://pypi.org/project/cookiecutter/
 [Synapse]: https://github.com/matrix-org/synapse
