@@ -4,5 +4,6 @@
   "package_description": "This module adds super florbs to Synapse",
   "package_name": "synapse_my_module",
   "module_class_name": "MyModule",
-  "main_git_branch": "main"
+  "main_git_branch": "main",
+  "variant": ["standard", "synapse_team"]
 }
