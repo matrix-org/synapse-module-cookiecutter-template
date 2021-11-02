@@ -65,8 +65,8 @@ You will then be asked a series of questions to populate your project:
    the CI configuration and suggested release instructions mention it.
    This is commonly `main`, `master`, `trunk`, `default` or `develop`.
 7. `variant`: Choose whether or not to include the Synapse Team-specific
-   customisations; use `standard` if you are a community member or `synapse_team`
-   if the Synapse Team is going to be maintaining this module.
+   customisations; pick `synapse_team` if the module will be maintained
+   by the Synapse Team. Otherwise, pick `standard`.
 
 
 If all goes well, you should now have a project starter!
