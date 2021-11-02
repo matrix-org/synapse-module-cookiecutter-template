@@ -23,6 +23,7 @@ What you get:
 * *Specific to the 'Synapse Team' variant:*
   * `CODEOWNERS` for automatic review requests for the `synapse-core` team on
     GitHub when a pull request is opened
+  * The Apache 2.0 licence with copyright notices
 
 Please refer to [the Synapse 'Writing a module' documentation][synapse_writemodule]
 for descriptions and examples (at the bottom of most pages) of using the Synapse

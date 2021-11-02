@@ -27,6 +27,7 @@ files_to_remove = []
 if variant_name != 'synapse_team':
     files_to_remove = [
         ".github/CODEOWNERS",
+        "LICENSE"
     ]
 
 for file_to_remove in files_to_remove:
