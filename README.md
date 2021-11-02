@@ -21,8 +21,8 @@ What you get:
     * strict by default (configurable in `mypy.ini`)
 * unit testing using `trial` (invokable with `tox`, checked in CI)
 * *Specific to the 'Synapse Team' variant:*
-  * `CODEOWNERS` for automatic review requests for the Synapse Core Team when a
-    pull request is opened
+  * `CODEOWNERS` for automatic review requests for the 'Synapse Core' team on
+    GitHub when a pull request is opened
 
 Please refer to [the Synapse 'Writing a module' documentation][synapse_writemodule]
 for descriptions and examples (at the bottom of most pages) of using the Synapse
