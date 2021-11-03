@@ -20,6 +20,9 @@ What you get:
     Synapse 1.46 and later)
     * strict by default (configurable in `mypy.ini`)
 * unit testing using `trial` (invokable with `tox`, checked in CI)
+* *Specific to the 'Synapse Team' variant:*
+  * `CODEOWNERS` for automatic review requests for the `synapse-core` team on
+    GitHub when a pull request is opened
 
 Please refer to [the Synapse 'Writing a module' documentation][synapse_writemodule]
 for descriptions and examples (at the bottom of most pages) of using the Synapse
@@ -61,6 +64,10 @@ You will then be asked a series of questions to populate your project:
    Although this template does not initialise a Git repository automatically,
    the CI configuration and suggested release instructions mention it.
    This is commonly `main`, `master`, `trunk`, `default` or `develop`.
+7. `variant`: Choose whether or not to include the 'Synapse Team'-specific
+   customisations; pick `synapse_team` if the module will be maintained
+   by the Synapse Team. Otherwise, pick `standard`.
+
 
 If all goes well, you should now have a project starter!
 
