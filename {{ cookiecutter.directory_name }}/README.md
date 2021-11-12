@@ -79,4 +79,8 @@ Synapse developers (assuming a Unix-like shell):
     Create a *release*, based on the tag you just pushed, on GitHub or GitLab.
 
  8. If applicable:
-    Create a source distribution and upload it to PyPI.
+    Create a source distribution and upload it to PyPI:
+    ```shell
+    python -m build
+    twine upload dist/{{ cookiecutter.package_name }}-$version*
+    ```
