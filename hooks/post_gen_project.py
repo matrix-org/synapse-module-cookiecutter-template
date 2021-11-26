@@ -11,9 +11,8 @@ main_branch_name = '{{ cookiecutter.main_git_branch }}'
 variant_name = '{{ cookiecutter.variant }}'
 
 try:
-    subprocess.run(
-        ['git', 'init', '--initial-branch', main_branch_name]
-    )
+    subprocess.run(['git', 'init'])
+    subprocess.run(['git', 'checkout', '-b', main_branch_name])
 except subprocess.CalledProcessError:
     print(
         "Unable to initialise git repository! "
