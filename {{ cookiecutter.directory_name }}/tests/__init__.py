@@ -16,9 +16,9 @@
 {% endif -%}
 from asyncio import Future
 from typing import Any, Awaitable, Dict, Optional, TypeVar
+from unittest.mock import Mock
 
 import attr
-from unittest.mock import Mock
 from synapse.module_api import ModuleApi
 
 from {{ cookiecutter.package_name }} import {{ cookiecutter.module_class_name }}
