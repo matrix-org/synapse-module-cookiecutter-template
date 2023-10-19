@@ -68,8 +68,8 @@ You will then be asked a series of questions to populate your project:
 7. `variant`: Choose whether or not to include the 'Synapse Team'-specific
    customisations; pick `synapse_team` if the module will be maintained
    by the Synapse Team. Otherwise, pick `standard`.
-8. `use_scm_version`: Choose wheter tu use SCM infos to set the version of the module.
-   This will use `setuptools_scm` for that, so check its manual for more infos.
+8. `use_scm_version`: Choose whether to use SCM info to set the version of the module.
+   This will use `setuptools_scm` for that, so check its manual for more info.
 
 
 If all goes well, you should now have a project starter!
