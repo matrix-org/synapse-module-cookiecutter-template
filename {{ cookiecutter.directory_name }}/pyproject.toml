@@ -1,6 +1,53 @@
+[project]
+name = "{{ cookiecutter.package_name }}"
+description = "{{ cookiecutter.package_description }}"
+readme = "README.md"
+{% if cookiecutter.use_scm_version == true %}
+dynamic = ["version"]
+{% else %}
+version = "0.0.0"
+{% endif %}
+
+requires-python = ">=3.8"
+
+classifiers = [
+  "License :: OSI Approved :: Apache Software License"
+]
+
+dependencies = [
+  "attrs"
+]
+
+[project.optional-dependencies]
+dev = [
+  # for tests
+  "matrix-synapse",
+  "tox",
+  "twisted",
+  "aiounittest",
+  # for type checking
+  "mypy == 1.6.1",
+  # for linting
+  "black == 23.10.0",
+  "flake8 == 6.1.0",
+  "isort == 5.12.0",
+]
+
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = [
+  "setuptools",
+  "wheel",
+{%- if cookiecutter.use_scm_version == true %}
+  "setuptools_scm",
+{%- endif %}
+]
 build-backend = "setuptools.build_meta"
+
+{%-if cookiecutter.use_scm_version == true%}
+
+[tool.setuptools_scm]
+
+{%- endif%}
 
 [tool.isort]
 profile = "black"
@@ -8,3 +55,6 @@ known_first_party = [
     "{{ cookiecutter.package_name }}",
     "tests"
 ]
+
+[tool.mypy]
+strict = true
